@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Kerala Train Timings</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<h1 class="logo">Kerala Train Timings</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="timings.html">Timetables</a>
+<a href="station.html">By Station</a>
+<a href="booking.html">Booking</a>
+<a href="about.html">About</a>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<section class="hero">
+<h2>Find train timings across Kerala</h2>
+<p>Search schedules, filter by origin/destination and time range. Sample demo with client-side data.</p>
+
+
+<form id="searchForm" class="search-form" onsubmit="return false;">
+<div class="row">
+<input id="qOrigin" placeholder="Origin station (e.g. Thiruvananthapuram)" />
+<input id="qDest" placeholder="Destination station (e.g. Ernakulam)" />
+<input id="qDate" type="date" />
+<button id="searchBtn">Search</button>
+</div>
+</form>
+
+
+<div class="quick-links">
+<a class="card" href="timings.html">View full timetable</a>
+<a class="card" href="station.html">Search by station</a>
+</div>
+</section>
+
+
+<section>
+<h3>Popular trains (sample)</h3>
+<div id="popularList" class="grid"></div>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<small>© Kerala Train Timings — demo • Not an official railway site</small>
+</div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Booking — Kerala Train Timings</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<h1 class="logo"><a href="index.html">Kerala Train Timings</a></h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="timings.html">Timetables</a>
+<a href="station.html">By Station</a>
+<a href="booking.html">Booking</a>
+<a href="about.html">About</a>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<h2>Booking / Contact (Demo)</h2>
+<p>This form demonstrates collecting booking details — it doesn't perform payments. Hook up to a backend for full functionality.</p>
+
+
+<form id="bookingForm" class="booking-form" onsubmit="return false;">
+<label>Your name<input id="bName" required /></label>
+<label>Mobile<input id="bPhone" type="tel" required /></label>
+<label>Origin<input id="bOrigin" required /></label>
+<label>Destination<input id="bDest" required /></label>
+<label>Date<input id="bDate" type="date" required /></label>
+<label>Train<select id="bTrain"></select></label>
+<button id="bookBtn">Send request</button>
+</form>
+<div id="bookMsg" aria-live="polite"></div>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<small>© Kerala Train Timings — demo</small>
+</div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Timetables — Kerala Train Timings</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<h1 class="logo"><a href="index.html">Kerala Train Timings</a></h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="timings.html">Timetables</a>
+<a href="station.html">By Station</a>
+<a href="booking.html">Booking</a>
+<a href="about.html">About</a>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<h2>Timetable</h2>
+
+
+<form id="filterForm" class="filter-form" onsubmit="return false;">
+<input id="filterOrigin" placeholder="Origin" />
+<input id="filterDest" placeholder="Destination" />
+<label>From <input id="timeFrom" type="time" /></label>
+<label>To <input id="timeTo" type="time" /></label>
+<select id="sortBy">
+<option value="depart">Sort by departure</option>
+<option value="arrive">Sort by arrival</option>
+<option value="duration">Sort by duration</option>
+</select>
+<button id="applyFilter">Apply</button>
+<button id="resetFilter">Reset</button>
+</form>
+
+
+<div id="timetableContainer"></div>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<small>© Kerala Train Timings — demo</small>
+</div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
